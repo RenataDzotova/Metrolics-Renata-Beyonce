@@ -13,6 +13,7 @@
 
 html {
   color: #222;
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -83,22 +84,218 @@ textarea {
   resize: vertical;
 }
 
+img {
+  width: 100%;
+}
+
+h1 {
+  color: black;
+}
 /* ==========================================================================
-   Author's custom styles
+   BASIC INITIAL LAYOUT
    ========================================================================== */
+   .row {
+    display: grid;
+    row-gap: 1rem;
+    margin: 0 1rem 3rem 1rem;;
+  }
+
+  .heading {
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+
+ 
+  p {
+    margin-top: -0.8rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: rgba(128, 128, 128);
+  }
+
+  .project > .imgs {
+    width: 50%;
+    position: relative;
+    text-align: center;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  hr {
+    background-color: lightskyblue;
+    padding: 1px;
+    margin: 50px;
+  }
+
+  /* ==========================================================================
+   LATEST PROJECTS LAYOUT
+   ========================================================================== */
+   .project .text {
+    visibility: hidden;
+  }
+  .project:hover .text {
+    position: absolute;
+    right: 0;
+    left: 0px;
+    bottom: 0;
+    height: 100%;
+    background: #39b4da;
+    font-size: 15px;
+    visibility: visible;
+    opacity: 85%;
+  }
+  .project:hover .text > h4 {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    padding: 0px 20px;
+    text-align: left;
+    color: white;
+  }
+  .project:hover .text > h5 {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    padding: 0px 20px;
+    font-size: 10px;
+    color: white;
+    font-weight:600;
+  }
+ 
+  .project .textimg{
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+  }
+  .project:hover .textimg{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 290px;
+    bottom: 30px;
+    visibility: visible;
+  }
+
+  /* ==========================================================================
+   MEDIA LAYOUTS
+   ========================================================================== */
+/* Small only */
+
+@media screen and (max-width: 39.9375em) {
+  .thingsofabove{
+    display: none;
+    visibility: hidden;
+  }
+  .project:hover .textimg {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 390px;
+    bottom: 30px;
+    visibility: visible;
+  }
+}
+
+/* Medium and up */
+
+@media screen and (min-width: 40em) {
+  .row {
+    width:85vw;
+    max-width: 70rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 0 auto 3rem auto;
+  }
+  .m-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .m-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .m-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .m-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .span-full {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+/* Medium only */
+
+@media screen and (min-width: 40em) and 
+(max-width: 63.9375em) {
+  .special-project {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .special-project img {
+    max-height: 20rem;
+  }
+  .project:hover .textimg {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 210px;
+    bottom: 25px;
+    visibility: visible;
+  }
+}
+
+/* Large and up */
+
+@media screen and (min-width: 64em) {
+  .l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .l-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Large only */
+
+@media screen and (min-width: 64em) and 
+(max-width: 74.9375em) {
+  .project:hover .textimg {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 220px;
+    bottom: 25px;
+    visibility: visible;
+  }
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+   .project {
+    position: relative;
+    margin: 0;
 /*
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
+ .hidden,
+ [hidden] {
+   display: none !important;
+ }
 
 /*
  * Hide only visually, but have it available for screen readers:
