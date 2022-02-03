@@ -1,0 +1,408 @@
+/* /////////////    THIS IS THE HEADER    ///////////// */
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+
+
+
+
+  /* ////////////   NAVBAR    */
+  .navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+  }
+  
+
+  /* //////  nav bar icons and img /////// */
+  .navBar .logo{
+    margin: 0 40px 0 0;
+  }
+
+  .home img, .pages img, .blog img, .portfolio img, .contact img{
+    width: 30px;
+}
+  
+  .navBar .home{
+    background-color: rgb(71, 148, 71);
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navBar .pages{
+    background-color: rgb(236, 226, 77);
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .navBar .blog{
+    background-color: rgb(236, 76, 76);
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .navBar .portfolio{
+    background-color: rgb(99, 205, 212);
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .navBar .contact{
+    background-color: rgb(34, 97, 214);
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  
+
+
+
+
+
+  /* //////  minion picture section  /////// */
+  .minions{
+    background-color: rgb(187, 187, 187);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+  }
+  
+  .minions img{
+      width: 1100px;
+  }
+
+
+
+  /* /////   text and arrows on minion picture  /////// */
+  .first-item, .second-item, .third-item{
+    background-color: lightgray;
+    opacity: 50%;
+    width: 170px;
+    height: 35px;
+    margin: 2px;
+    top: -280px;
+    left: -300px;
+    padding-left: 10px;
+    
+  }
+  
+  .minions .three-items p{
+    opacity: 100%;
+  }
+  
+  .first-item{ 
+    border-left:rgb(34, 97, 214) 5px solid;
+    position: relative;
+  }
+  .second-item{
+    border-left:rgb(236, 76, 76) 5px solid;
+    position: relative;
+  }
+  .third-item{
+    border-left:rgb(236, 226, 77)5px solid;
+    position: relative;
+  }
+  
+  
+
+
+
+
+
+
+  
+/* //////////////  logo pictures above footer ////////// */
+  .partners-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partners-logos img{
+    margin: 40px 20px 40px 20px;
+    width: 150px;
+  }
+
+
+
+
+
+
+  
+  /* ///////////     FOOTER      /////////  */
+
+  .footer-black{
+    background-color: rgb(24, 22, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+  
+  .footerBlack_content{
+    width: 1000px;
+    height: 450px;
+    margin: 0px;
+  }
+
+
+  
+
+
+  /* ////////// Pewee Herman Section ////////// */
+  .PeweeHerman{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+  }
+  
+  .PeweeHerman img{
+    border-radius: 50%;
+    margin: 30px 15px 20px 0;
+    width: 100px;
+  }
+  
+  .PeweeHerman .text{
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+  
+
+
+
+  /* ////////// information blocks ////////// */
+
+  .info-blocks h3{
+    margin-bottom: 30px;
+  }
+  
+  .text > h3{
+    margin-bottom: 5px;
+  }
+  
+  .info-blocks{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 1000px;
+  }
+  
+  .info-blocks p{
+    font-size: 14px;
+    margin-top: 0;
+    padding-right: 20px;
+  }
+  
+  .info-blocks div{
+    width: 250px;
+  }
+  
+
+
+
+
+  /* ///////  block one  ////// */
+  .info-blocks .blockOne{
+    display: flex;
+    flex-direction: column;
+    color:  white;
+    width: 25%;
+  }
+  
+  .info-blocks .social-media-icons{
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+  }
+  
+  .textAbout{
+    border-bottom: yellow 2px solid;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+  /* ////// block two  //////// */
+  .info-blocks .blockTwo{
+    display: flex;
+    flex-direction: column;
+    color:  white;
+    width: 25%;
+  }
+  
+  .blockTwo .minion-pictures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 100px;
+  }
+  
+  .blockTwo .minion-pictures>img{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .textPhotos{
+    border-bottom: rgb(71, 148, 71) 2px solid;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+  /* ///////// block three  ///////// */
+  .info-blocks .blockThree{
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .blockThree .tweets{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .blockThree .tweets img{
+    width: 34px;
+    height: 34px;
+    margin: 5px 15px 0 0;
+  }
+  
+  .blockThree .tweets p{
+    margin-top: 0px;
+  }
+
+  .textTweets{
+    border-bottom: rgb(236, 76, 76) 2px solid;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+  /* //////   block four   ///////// */
+  .info-blocks .blockFour{
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  
+  .blockFour input{
+    width: 200px;
+  }
+  
+  .blockFour button{
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    margin-left: 5px;
+  }
+  .form{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .text{
+    border-bottom: white 2px solid;
+  }
+  
+  .textForm{
+    border-bottom: rgb(34, 97, 214) 2px solid;
+    margin-bottom: 20px;
+  }
+  
+
+
+  
+  
+/* /////////////  colorful thing on the bottom  //////// */
+  
+  .colorfulThing{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+  }
+
+
+
+
+
+  /* //////////////// media queries //////////// */
+
+  @media screen and (max-width: 74.9375em) {
+    .footerBlack_content{
+        width: 600px;
+        height: 850px;
+    }
+
+    .footer-black{
+        height: fit-content;
+    }
+    
+    .PeweeHerman{
+        width: 600px;
+    }
+
+    .info-blocks{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 150px 150px;
+        width: 600px;
+        grid-gap: 130px 10px;
+        padding: 10px;
+    }
+
+    .blockOne p{
+        width: 250px;
+    }
+
+    .colorfulThing{
+        align-items: flex-end;
+    }
+
+}
