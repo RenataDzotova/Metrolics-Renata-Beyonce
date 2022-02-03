@@ -88,6 +88,10 @@
   
 
 
+  .hamburger{
+      display: none;
+  }
+
 
 
 
@@ -102,7 +106,7 @@
   }
   
   .minions img{
-      width: 1100px;
+      width: 85vw;
   }
 
 
@@ -177,7 +181,6 @@
   
   .footerBlack_content{
     width: 1000px;
-    height: 450px;
     margin: 0px;
   }
 
@@ -223,6 +226,7 @@
     flex-direction: row;
     align-content: flex-start;
     width: 1000px;
+    height:fit-content;
   }
   
   .info-blocks p{
@@ -366,10 +370,109 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;
+    /* padding-left: 300px; */
+  }
+
+  .colorfulThing img{
+      width: 400px;
   }
 
 
 
 
+  /* //////////////// media queries //////////// */
 
+  @media screen and (max-width: 74.9375em) {
+    .footerBlack_content{
+        width: 600px;
+        height: fit-content;
+    }
+
+    .footer-black{
+        height: fit-content;
+    }
+    
+    .PeweeHerman{
+        width: 600px;
+    }
+
+    .info-blocks{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 150px 150px;
+        width: 600px;
+        grid-gap: 130px 10px;
+        padding: 10 10 0 10px;
+        height: 600px;
+    }
+
+    .blockOne p{
+        width: 250px;
+    }
+
+}
+
+
+    @media screen and (max-width: 39.9375em) {
+
+        .minions{
+            display: none;
+        }
+
+        .navBar .home, 
+        .navBar .pages, 
+        .navBar .blog, 
+        .navBar .portfolio, 
+        .navBar .contact{
+            display: none;
+        }
+
+        .partners-logos{
+            display: none;
+        }
+
+        .info-blocks{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 10px 10px;
+            width: 300px;
+            grid-gap: 20px;
+            padding: 10 10 0 10px;
+            height: 300px;
+        }
+
+        .footerBlack_content{
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .PeweeHerman{
+            width: 400px;
+        }
+
+        .PeweeHerman > .photo img{
+            width: 150px;
+        }
+
+
+        .colorfulThing{
+            justify-content: center;
+        }
+
+        .textAbout, .blockOne>p{
+            display: none;
+        }
+
+        .info-blocks>.blockTwo, .info-blocks>.blockFour{
+            display: none;
+        }
+
+        .hamburger{
+            display: block;
+            width: 80px;
+        }
+    }
 
